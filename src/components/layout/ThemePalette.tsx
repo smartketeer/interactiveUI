@@ -11,6 +11,18 @@ export function ThemePalette() {
   const [search, setSearch] = useState("");
   const { theme, setTheme } = useTheme();
   const inputRef = useRef<HTMLInputElement>(null);
+  const [showTooltip, setShowTooltip] = useState(false);
+
+  useEffect(() => {
+    if (!sessionStorage.getItem("session_themes_discovered")) {
+      setShowTooltip(true);
+    }
+  }, []);
+
+  const dismissTooltip = () => {
+    setShowTooltip(false);
+    sessionStorage.setItem("session_themes_discovered", "true");
+  };
 
   // Toggle with Ctrl+K
   useEffect(() => {
@@ -38,16 +50,44 @@ export function ThemePalette() {
 
   return (
     <>
-      <button 
-        onClick={() => setOpen(true)}
-        className="flex items-center gap-2 px-3 py-1.5 rounded-theme-sm border border-theme-border bg-theme-surface text-theme-muted hover:text-theme-text transition-colors"
-      >
-        <Command className="w-4 h-4" />
-        <span className="text-sm font-medium hidden sm:inline-block">Themes</span>
-        <kbd className="hidden sm:inline-flex items-center gap-1 rounded bg-theme-secondary px-1.5 text-[10px] font-medium font-mono text-theme-muted">
-          <span className="text-xs">⌘</span>K
-        </kbd>
-      </button>
+      <div className="relative inline-flex items-center">
+        <button 
+          onClick={() => {
+            setOpen(true);
+            dismissTooltip();
+          }}
+          className="flex items-center gap-2 px-3 py-1.5 rounded-theme-sm border border-theme-border bg-theme-surface text-theme-muted hover:text-theme-text transition-colors"
+        >
+          <Command className="w-4 h-4" />
+          <span className="text-sm font-medium hidden sm:inline-block">Themes</span>
+          <kbd className="hidden sm:inline-flex items-center gap-1 rounded bg-theme-secondary px-1.5 text-[10px] font-medium font-mono text-theme-muted">
+            <span className="text-xs">⌘</span>K
+          </kbd>
+        </button>
+        <AnimatePresence>
+          {showTooltip && (
+            <motion.div
+              initial={{ opacity: 0, y: 10, scale: 0.95 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.95, transition: { duration: 0.15 } }}
+              className="absolute right-0 top-full mt-3 w-64 z-[90] surface-structural p-4 rounded-theme border border-theme-border shadow-2xl flex flex-col gap-3"
+            >
+              <p className="text-sm text-theme-text font-medium leading-relaxed">
+                Click here to switch the theme and explore 49 distinct architectures ✨
+              </p>
+              <button 
+                onClick={(e) => {
+                  e.stopPropagation();
+                  dismissTooltip();
+                }}
+                className="self-end text-xs font-bold px-3 py-1.5 rounded-theme-sm text-theme-muted hover:text-theme-text hover:bg-theme-secondary transition-colors"
+              >
+                Okay
+              </button>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
 
       <AnimatePresence>
         {open && (
