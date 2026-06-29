@@ -47,10 +47,10 @@ export function StatusWidget() {
 
   const getIcon = (name: string) => {
     switch (name) {
-      case "Database": return <Database className="h-4 w-4" />;
-      case "Redis Cache": return <Box className="h-4 w-4" />;
-      case "Auth Service": return <Key className="h-4 w-4" />;
-      case "Message Queue": return <Server className="h-4 w-4" />;
+      case "The Mill": return <Server className="h-4 w-4" />;
+      case "The Store": return <Database className="h-4 w-4" />;
+      case "Punched Cards": return <Box className="h-4 w-4" />;
+      case "The Printer": return <Activity className="h-4 w-4" />;
       default: return <Activity className="h-4 w-4" />;
     }
   };
@@ -64,7 +64,7 @@ export function StatusWidget() {
       <div className="flex items-center justify-between border-b border-theme-border pb-4">
         <div className="flex items-center gap-2">
           <Activity className="h-5 w-5 text-theme-primary" />
-          <h3 className="font-semibold text-theme-text font-heading tracking-tight">Live Core Systems</h3>
+          <h3 className="font-semibold text-theme-text font-heading tracking-tight">Analytical Engine</h3>
         </div>
         <div className="flex items-center gap-2">
           <div className={cn("h-2.5 w-2.5 rounded-full animate-pulse", data?.status === "healthy" ? "bg-green-500" : "bg-yellow-500")} />

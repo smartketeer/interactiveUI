@@ -19,7 +19,7 @@ export function Navigation() {
     <header className="sticky top-0 z-50 w-full border-b border-theme-muted/20 bg-theme-base/80 backdrop-blur-md">
       <div className="container mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="text-xl font-bold tracking-tight text-theme-text">
-          Vincent<span className="text-theme-primary">Sedimo</span>
+          Ada<span className="text-theme-primary">Lovelace</span>
         </Link>
         <nav className="hidden md:flex items-center gap-8">
           {links.map(({ href, label }) => {

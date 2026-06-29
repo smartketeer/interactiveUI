@@ -6,7 +6,7 @@ export function Footer() {
     <footer className="w-full border-t border-theme-muted/20 bg-theme-base py-8">
       <div className="container mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-4 sm:flex-row sm:px-6 lg:px-8">
         <p className="text-sm text-theme-muted">
-          © {new Date().getFullYear()} Vincent Sedimo. All rights reserved.
+          © {new Date().getFullYear()} Ada Lovelace. All rights reserved.
         </p>
         <div className="flex items-center gap-4">
           <Link href="https://github.com" target="_blank" className="text-theme-muted hover:text-theme-primary transition-colors">

@@ -14,11 +14,11 @@ export function Hero() {
         <div className="flex flex-col gap-6 max-w-2xl">
           <div className="inline-flex items-center gap-2 rounded-theme-sm border-[length:var(--theme-border-width)] border-theme-border bg-theme-secondary/50 px-3 py-1 text-sm text-theme-text w-fit">
             <Terminal className="h-4 w-4 text-theme-primary" />
-            <span>Senior Full Stack Developer</span>
+            <span>Visionary Mathematician</span>
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-theme-text leading-[1.1] font-heading">
-            Architecting scalable <span className="text-theme-primary">web systems</span> for the modern web.
+            The World's First <span className="text-theme-primary">Computer Programmer</span>.
           </h1>
           
           <div className="text-xl text-theme-muted leading-relaxed max-w-xl font-body">
@@ -42,9 +42,9 @@ export function Hero() {
                 backgroundClip: "text"
               }}
             >
-              Vincent Sedimo
+              Ada Lovelace
             </motion.span>
-            . I specialize in designing and building high-performance, production-ready applications with React, Next.js, and complex backend architectures.
+            . I realized that the Analytical Engine had applications far beyond pure calculation, envisioning a future of algorithmic music and what would become modern computing.
           </div>
           
           <div className="flex items-center gap-4 pt-4">

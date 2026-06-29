@@ -72,11 +72,12 @@ export function ContactForm() {
         </div>
       )}
 
-      <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+      <form onSubmit={handleSubmit(onSubmit)} className="space-y-6" suppressHydrationWarning>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <div className="space-y-2">
             <label htmlFor="name" className="text-sm font-medium text-theme-text">Name</label>
             <input
+              suppressHydrationWarning
               {...register("name")}
               id="name"
               className={cn(
@@ -93,6 +94,7 @@ export function ContactForm() {
           <div className="space-y-2">
             <label htmlFor="email" className="text-sm font-medium text-theme-text">Email</label>
             <input
+              suppressHydrationWarning
               {...register("email")}
               id="email"
               type="email"
@@ -111,6 +113,7 @@ export function ContactForm() {
         <div className="space-y-2">
           <label htmlFor="message" className="text-sm font-medium text-theme-text">Message</label>
           <textarea
+            suppressHydrationWarning
             {...register("message")}
             id="message"
             className={cn(
