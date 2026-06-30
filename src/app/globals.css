@@ -31,7 +31,7 @@
 }
 
 /* 2. Modern (Default) - Clean, subtle borders, soft shadows */
-:root, [data-theme="modern"] {
+:root[data-mode="dark"], [data-theme="modern"][data-mode="dark"], [data-theme="modern"]:not([data-mode]) {
   --theme-base: #050505;
   --theme-surface: #111111;
   --theme-primary: #ffffff;
@@ -51,8 +51,28 @@
   --theme-font-body: var(--font-geist-sans);
 }
 
+:root[data-mode="light"], [data-theme="modern"][data-mode="light"] {
+  --theme-base: #fafafa;
+  --theme-surface: #ffffff;
+  --theme-primary: #050505;
+  --theme-secondary: #f0f0f0;
+  --theme-accent: #2563eb;
+  --theme-border: rgba(0, 0, 0, 0.1);
+  --theme-text: #171717;
+  --theme-muted: #737373;
+  
+  --theme-radius-base: 12px;
+  --theme-radius-sm: 6px;
+  --theme-border-width: 1px;
+  --theme-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.1);
+  --theme-backdrop-blur: 0px;
+  
+  --theme-font-heading: var(--font-geist-sans);
+  --theme-font-body: var(--font-geist-sans);
+}
+
 /* 3. Brutalism - Harsh, heavy borders, huge solid shadows, 0px radius */
-[data-theme="brutalism"] {
+[data-theme="brutalism"][data-mode="light"], [data-theme="brutalism"]:not([data-mode]) {
   --theme-base: #ffffff;
   --theme-surface: #f0f0f0;
   --theme-primary: #ff0000;
@@ -72,8 +92,28 @@
   --theme-font-body: "Courier New", monospace;
 }
 
+[data-theme="brutalism"][data-mode="dark"] {
+  --theme-base: #000000;
+  --theme-surface: #1a1a1a;
+  --theme-primary: #ff3333;
+  --theme-secondary: #cccc00;
+  --theme-accent: #3333ff;
+  --theme-border: #ffffff;
+  --theme-text: #ffffff;
+  --theme-muted: #cccccc;
+  
+  --theme-radius-base: 0px;
+  --theme-radius-sm: 0px;
+  --theme-border-width: 4px;
+  --theme-shadow: 8px 8px 0px 0px #ffffff;
+  --theme-backdrop-blur: 0px;
+  
+  --theme-font-heading: "Courier New", monospace;
+  --theme-font-body: "Courier New", monospace;
+}
+
 /* 4. Glassmorphism - Massive blur, 0px solid borders, heavy radius */
-[data-theme="glassmorphism"] {
+[data-theme="glassmorphism"][data-mode="dark"], [data-theme="glassmorphism"]:not([data-mode]) {
   --theme-base: #0f172a;
   --theme-surface: rgba(255, 255, 255, 0.03);
   --theme-primary: #38bdf8;
@@ -87,6 +127,26 @@
   --theme-radius-sm: 12px;
   --theme-border-width: 1px;
   --theme-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  --theme-backdrop-blur: 24px;
+  
+  --theme-font-heading: var(--font-geist-sans);
+  --theme-font-body: var(--font-geist-sans);
+}
+
+[data-theme="glassmorphism"][data-mode="light"] {
+  --theme-base: #f0f4f8;
+  --theme-surface: rgba(255, 255, 255, 0.4);
+  --theme-primary: #0284c7;
+  --theme-secondary: rgba(255, 255, 255, 0.6);
+  --theme-accent: #db2777;
+  --theme-border: rgba(255, 255, 255, 1);
+  --theme-text: #0f172a;
+  --theme-muted: #475569;
+  
+  --theme-radius-base: 24px;
+  --theme-radius-sm: 12px;
+  --theme-border-width: 1px;
+  --theme-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
   --theme-backdrop-blur: 24px;
   
   --theme-font-heading: var(--font-geist-sans);
@@ -666,7 +726,7 @@
 }
 
 /* 32. Flat Design */
-[data-theme="flat-design"] {
+[data-theme="flat-design"][data-mode="light"], [data-theme="flat-design"]:not([data-mode]) {
   --theme-base: #f9f9f9;
   --theme-surface: #ffffff;
   --theme-primary: #3b82f6;
@@ -675,6 +735,22 @@
   --theme-border: transparent;
   --theme-text: #1f2937;
   --theme-muted: #6b7280;
+  --theme-radius-base: 4px;
+  --theme-radius-sm: 2px;
+  --theme-border-width: 0px;
+  --theme-shadow: none;
+  --theme-backdrop-blur: 0px;
+}
+
+[data-theme="flat-design"][data-mode="dark"] {
+  --theme-base: #111827;
+  --theme-surface: #1f2937;
+  --theme-primary: #60a5fa;
+  --theme-secondary: #374151;
+  --theme-accent: #fbbf24;
+  --theme-border: transparent;
+  --theme-text: #f9fafb;
+  --theme-muted: #9ca3af;
   --theme-radius-base: 4px;
   --theme-radius-sm: 2px;
   --theme-border-width: 0px;

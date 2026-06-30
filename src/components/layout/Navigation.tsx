@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { ThemePalette } from "./ThemePalette";
+import { ModeToggle } from "./ModeToggle";
 
 const links = [
   { href: "/", label: "Home" },
@@ -49,6 +50,7 @@ export function Navigation() {
         </nav>
         <div className="flex items-center gap-4">
           <ThemePalette />
+          <ModeToggle />
           <Link
             href="/#contact"
             className="hidden md:inline-flex h-9 items-center justify-center rounded-theme bg-theme-primary px-4 py-2 text-sm font-medium text-theme-base shadow transition-colors hover:bg-theme-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-theme-primary disabled:pointer-events-none disabled:opacity-50"
