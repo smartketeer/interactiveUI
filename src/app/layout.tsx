@@ -35,18 +35,18 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col" suppressHydrationWarning>
-        <ModeProvider>
-          <ThemeProvider
-            attribute="data-theme"
-            defaultTheme="modern"
-            enableSystem={false}
-            disableTransitionOnChange
-          >
+        <ThemeProvider
+          attribute="data-theme"
+          defaultTheme="modern"
+          enableSystem={false}
+          disableTransitionOnChange
+        >
+          <ModeProvider>
             <Navigation />
             <main className="flex-1">{children}</main>
             <Footer />
-          </ThemeProvider>
-        </ModeProvider>
+          </ModeProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

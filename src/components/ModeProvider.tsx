@@ -38,11 +38,6 @@ export function ModeProvider({ children }: { children: React.ReactNode }) {
     setMode(mode === "light" ? "dark" : "light");
   };
 
-  // Prevent hydration mismatch by not rendering anything mode-specific until mounted
-  if (!mounted) {
-    return <>{children}</>;
-  }
-
   return (
     <ModeContext.Provider value={{ mode, toggleMode, setMode }}>
       {children}
