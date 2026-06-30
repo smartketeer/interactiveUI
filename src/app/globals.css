@@ -153,577 +153,9 @@
   --theme-font-body: var(--font-geist-sans);
 }
 
-/* 5. Cyberpunk UI */
-[data-theme="cyberpunk"] {
-  --theme-base: #020b14;
-  --theme-surface: #0a192f;
-  --theme-primary: #fcee0a;
-  --theme-secondary: #00ff00;
-  --theme-accent: #ff003c;
-  --theme-border: #fcee0a;
-  --theme-text: #e0e6ed;
-  --theme-muted: #8892b0;
-  
-  --theme-radius-base: 0px;
-  --theme-radius-sm: 0px;
-  --theme-border-width: 1px;
-  --theme-shadow: 0 0 12px 2px rgba(252, 238, 10, 0.4);
-  --theme-backdrop-blur: 0px;
-  
-  --theme-font-heading: "Courier New", monospace;
-  --theme-font-body: "Courier New", monospace;
-}
-
-/* 6. Neumorphism */
-[data-theme="neumorphism"] {
-  --theme-base: #e0e5ec;
-  --theme-surface: #e0e5ec;
-  --theme-primary: #4a90e2;
-  --theme-secondary: #a3b1c6;
-  --theme-accent: #ff4757;
-  --theme-border: transparent;
-  --theme-text: #4a4a4a;
-  --theme-muted: #888888;
-  
-  --theme-radius-base: 20px;
-  --theme-radius-sm: 10px;
-  --theme-border-width: 0px;
-  --theme-shadow: 9px 9px 16px rgba(163,177,198,0.6), -9px -9px 16px rgba(255,255,255, 0.5);
-  --theme-backdrop-blur: 0px;
-  
-  --theme-font-heading: var(--font-geist-sans);
-  --theme-font-body: var(--font-geist-sans);
-}
-
-/* 7. Claymorphism */
-[data-theme="claymorphism"] {
-  --theme-base: #f1f5f9;
-  --theme-surface: #ffffff;
-  --theme-primary: #ff6b6b;
-  --theme-secondary: #4ecdc4;
-  --theme-accent: #ffe66d;
-  --theme-border: transparent;
-  --theme-text: #2d3436;
-  --theme-muted: #636e72;
-  
-  --theme-radius-base: 32px;
-  --theme-radius-sm: 16px;
-  --theme-border-width: 0px;
-  --theme-shadow: inset 4px 4px 8px rgba(255,255,255,0.7), inset -4px -4px 8px rgba(0,0,0,0.05), 8px 8px 16px rgba(0,0,0,0.08);
-  --theme-backdrop-blur: 0px;
-  
-  --theme-font-heading: var(--font-geist-sans);
-  --theme-font-body: var(--font-geist-sans);
-}
-
-/* 8. Aurora UI */
-[data-theme="aurora"] {
-  --theme-base: #0f172a;
-  --theme-surface: rgba(255, 255, 255, 0.05);
-  --theme-primary: #a855f7;
-  --theme-secondary: rgba(168, 85, 247, 0.1);
-  --theme-accent: #ec4899;
-  --theme-border: rgba(255, 255, 255, 0.1);
-  --theme-text: #ffffff;
-  --theme-muted: #94a3b8;
-  
-  --theme-radius-base: 24px;
-  --theme-radius-sm: 12px;
-  --theme-border-width: 1px;
-  --theme-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  --theme-backdrop-blur: 16px;
-  
-  --theme-font-heading: var(--font-geist-sans);
-  --theme-font-body: var(--font-geist-sans);
-}
-
-/* 9. Retro-Futurism */
-[data-theme="retrofuturism"] {
-  --theme-base: #2a2426;
-  --theme-surface: #3a3235;
-  --theme-primary: #ff8c42;
-  --theme-secondary: #42b883;
-  --theme-accent: #ff3c38;
-  --theme-border: #ff8c42;
-  --theme-text: #f0f0f0;
-  --theme-muted: #a0a0a0;
-  
-  --theme-radius-base: 8px;
-  --theme-radius-sm: 4px;
-  --theme-border-width: 2px;
-  --theme-shadow: 4px 4px 0px 0px #ff8c42;
-  --theme-backdrop-blur: 0px;
-  
-  --theme-font-heading: "Courier New", monospace;
-  --theme-font-body: "Courier New", monospace;
-}
-
-/* 10. Bento Box Grid */
-[data-theme="bento"] {
-  --theme-base: #f4f4f5;
-  --theme-surface: #ffffff;
-  --theme-primary: #18181b;
-  --theme-secondary: #e4e4e7;
-  --theme-accent: #3b82f6;
-  --theme-border: #d4d4d8;
-  --theme-text: #18181b;
-  --theme-muted: #71717a;
-  
-  --theme-radius-base: 24px;
-  --theme-radius-sm: 12px;
-  --theme-border-width: 1px;
-  --theme-shadow: none;
-  --theme-backdrop-blur: 0px;
-  
-  --theme-font-heading: var(--font-geist-sans);
-  --theme-font-body: var(--font-geist-sans);
-}
-
-/* 11. Spatial UI (VisionOS) */
-[data-theme="spatial"] {
-  --theme-base: #000000;
-  --theme-surface: rgba(255, 255, 255, 0.15);
-  --theme-primary: #ffffff;
-  --theme-secondary: rgba(255, 255, 255, 0.1);
-  --theme-accent: #007aff;
-  --theme-border: rgba(255, 255, 255, 0.4);
-  --theme-text: #ffffff;
-  --theme-muted: rgba(255, 255, 255, 0.6);
-  
-  --theme-radius-base: 9999px; /* Pill shapes */
-  --theme-radius-container: 32px;
-  --theme-radius-sm: 32px;
-  --theme-border-width: 1px;
-  --theme-shadow: 0 16px 40px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.2);
-  --theme-backdrop-blur: 40px;
-  
-  --theme-font-heading: var(--font-geist-sans);
-  --theme-font-body: var(--font-geist-sans);
-}
-
-/* 12. Terminal / CLI */
-[data-theme="terminal"] {
-  --theme-base: #000000;
-  --theme-surface: #000000;
-  --theme-primary: #00ff00;
-  --theme-secondary: #003300;
-  --theme-accent: #00ff00;
-  --theme-border: #00ff00;
-  --theme-text: #00ff00;
-  --theme-muted: #008800;
-  
-  --theme-radius-base: 0px;
-  --theme-radius-sm: 0px;
-  --theme-border-width: 1px;
-  --theme-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
-  --theme-backdrop-blur: 0px;
-  
-  --theme-font-heading: "Courier New", monospace;
-  --theme-font-body: "Courier New", monospace;
-}
-
-/* 13. Wireframe */
-[data-theme="wireframe"] {
-  --theme-base: #ffffff;
-  --theme-surface: #ffffff;
-  --theme-primary: #0000ff;
-  --theme-secondary: #e6e6ff;
-  --theme-accent: #00ffff;
-  --theme-border: #0000ff;
-  --theme-text: #0000ff;
-  --theme-muted: #6666ff;
-  
-  --theme-radius-base: 0px;
-  --theme-radius-sm: 0px;
-  --theme-border-width: 1px;
-  --theme-shadow: none;
-  --theme-backdrop-blur: 0px;
-  
-  --theme-font-heading: "Courier New", monospace;
-  --theme-font-body: "Courier New", monospace;
-}
-
-/* 14. AMOLED Pitch Black */
-[data-theme="amoled"] {
-  --theme-base: #000000;
-  --theme-surface: #000000;
-  --theme-primary: #ffffff;
-  --theme-secondary: #111111;
-  --theme-accent: #3b82f6;
-  --theme-border: #222222;
-  --theme-text: #ffffff;
-  --theme-muted: #888888;
-  
-  --theme-radius-base: 12px;
-  --theme-radius-sm: 8px;
-  --theme-border-width: 1px;
-  --theme-shadow: none;
-  --theme-backdrop-blur: 0px;
-  
-  --theme-font-heading: var(--font-geist-sans);
-  --theme-font-body: var(--font-geist-sans);
-}
-
-/* 15. Holographic */
-[data-theme="holographic"] {
-  --theme-base: #0f0c29;
-  --theme-surface: rgba(255, 255, 255, 0.05);
-  --theme-primary: #00ffff;
-  --theme-secondary: rgba(0, 255, 255, 0.1);
-  --theme-accent: #ff00ff;
-  --theme-border: rgba(0, 255, 255, 0.3);
-  --theme-text: #ffffff;
-  --theme-muted: #a0a0a0;
-  
-  --theme-radius-base: 24px;
-  --theme-radius-sm: 12px;
-  --theme-border-width: 1px;
-  --theme-shadow: 0 0 20px rgba(0, 255, 255, 0.3), inset 0 0 20px rgba(255, 0, 255, 0.2);
-  --theme-backdrop-blur: 16px;
-  
-  --theme-font-heading: var(--font-geist-sans);
-  --theme-font-body: var(--font-geist-sans);
-}
-
-/* 16. Dracula */
-[data-theme="dracula"] {
-  --theme-base: #282a36;
-  --theme-surface: #44475a;
-  --theme-primary: #ff79c6;
-  --theme-secondary: #6272a4;
-  --theme-accent: #8be9fd;
-  --theme-border: #6272a4;
-  --theme-text: #f8f8f2;
-  --theme-muted: #6272a4;
-  
-  --theme-radius-base: 6px;
-  --theme-radius-sm: 4px;
-  --theme-border-width: 1px;
-  --theme-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-  --theme-backdrop-blur: 0px;
-  
-  --theme-font-heading: var(--font-geist-sans);
-  --theme-font-body: var(--font-geist-sans);
-}
-
-/* 17. Nord */
-[data-theme="nord"] {
-  --theme-base: #2e3440;
-  --theme-surface: #3b4252;
-  --theme-primary: #88c0d0;
-  --theme-secondary: #434c5e;
-  --theme-accent: #81a1c1;
-  --theme-border: #4c566a;
-  --theme-text: #eceff4;
-  --theme-muted: #d8dee9;
-  
-  --theme-radius-base: 4px;
-  --theme-radius-sm: 2px;
-  --theme-border-width: 1px;
-  --theme-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  --theme-backdrop-blur: 0px;
-  
-  --theme-font-heading: var(--font-geist-sans);
-  --theme-font-body: var(--font-geist-sans);
-}
-
-/* 18. Solarized Light */
-[data-theme="solarized-light"] {
-  --theme-base: #fdf6e3;
-  --theme-surface: #eee8d5;
-  --theme-primary: #268bd2;
-  --theme-secondary: #93a1a1;
-  --theme-accent: #d33682;
-  --theme-border: #93a1a1;
-  --theme-text: #073642;
-  --theme-muted: #586e75;
-  
-  --theme-radius-base: 2px;
-  --theme-radius-sm: 2px;
-  --theme-border-width: 1px;
-  --theme-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  --theme-backdrop-blur: 0px;
-  
-  --theme-font-heading: var(--font-geist-sans);
-  --theme-font-body: var(--font-geist-sans);
-}
-
-/* 19. Solarized Dark */
-[data-theme="solarized-dark"] {
-  --theme-base: #002b36;
-  --theme-surface: #073642;
-  --theme-primary: #2aa198;
-  --theme-secondary: #586e75;
-  --theme-accent: #cb4b16;
-  --theme-border: #586e75;
-  --theme-text: #93a1a1;
-  --theme-muted: #839496;
-  
-  --theme-radius-base: 2px;
-  --theme-radius-sm: 2px;
-  --theme-border-width: 1px;
-  --theme-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  --theme-backdrop-blur: 0px;
-  
-  --theme-font-heading: var(--font-geist-sans);
-  --theme-font-body: var(--font-geist-sans);
-}
-
-/* 20. Bauhaus */
-[data-theme="bauhaus"] {
-  --theme-base: #f5f5f5;
-  --theme-surface: #ffffff;
-  --theme-primary: #da291c;
-  --theme-secondary: #ffcd00;
-  --theme-accent: #0033a0;
-  --theme-border: #000000;
-  --theme-text: #000000;
-  --theme-muted: #666666;
-  
-  --theme-radius-base: 0px;
-  --theme-radius-sm: 0px;
-  --theme-border-width: 4px;
-  --theme-shadow: none;
-  --theme-backdrop-blur: 0px;
-  
-  --theme-font-heading: var(--font-geist-sans);
-  --theme-font-body: var(--font-geist-sans);
-}
-
-/* 21. Hand-drawn / Sketch */
-[data-theme="hand-drawn"] {
-  --theme-base: #ffffff;
-  --theme-surface: #f9f9f9;
-  --theme-primary: #000000;
-  --theme-secondary: #eeeeee;
-  --theme-accent: #ff0000;
-  --theme-border: #000000;
-  --theme-text: #000000;
-  --theme-muted: #666666;
-  
-  --theme-radius-base: 4px;
-  --theme-radius-sm: 2px;
-  --theme-border-width: 2px;
-  --theme-shadow: 2px 2px 0px 0px rgba(0,0,0,0.1);
-  --theme-backdrop-blur: 0px;
-  
-  --theme-font-heading: "Comic Sans MS", "Chalkboard SE", cursive;
-  --theme-font-body: "Comic Sans MS", "Chalkboard SE", cursive;
-}
 /* Note: For true hand-drawn borders, you'd apply border-style: dashed or rough SVG borders via a structural class modifier if desired. */
 
-/* 22. Comic Book / Pop Art */
-[data-theme="comic"] {
-  --theme-base: #ffffff;
-  --theme-surface: #ffde00; /* Simulated flat pop color */
-  --theme-primary: #ff0000;
-  --theme-secondary: #00a2ff;
-  --theme-accent: #ff00ff;
-  --theme-border: #000000;
-  --theme-text: #000000;
-  --theme-muted: #333333;
-  
-  --theme-radius-base: 0px;
-  --theme-radius-sm: 0px;
-  --theme-border-width: 3px;
-  --theme-shadow: 6px 6px 0px 0px #000000;
-  --theme-backdrop-blur: 0px;
-  
-  --theme-font-heading: "Impact", "Arial Black", sans-serif;
-  --theme-font-body: var(--font-geist-sans);
-}
 /* Note: Halftone backgrounds can be injected into .surface-structural via radial-gradients in a specialized variant */
-
-/* 23. Watercolor */
-[data-theme="watercolor"] {
-  --theme-base: #faf8f5;
-  --theme-surface: rgba(240, 248, 255, 0.4);
-  --theme-primary: #6da2db;
-  --theme-secondary: rgba(255, 182, 193, 0.3);
-  --theme-accent: #ffb6c1;
-  --theme-border: transparent;
-  --theme-text: #2c3e50;
-  --theme-muted: #7f8c8d;
-  
-  --theme-radius-base: 32px;
-  --theme-radius-sm: 16px;
-  --theme-border-width: 0px;
-  --theme-shadow: 0 10px 40px -10px rgba(109, 162, 219, 0.3);
-  --theme-backdrop-blur: 8px;
-  
-  --theme-font-heading: "Georgia", serif;
-  --theme-font-body: var(--font-geist-sans);
-}
-
-/* 24. Candy / Bubblegum */
-[data-theme="candy"] {
-  --theme-base: #ffe4e1;
-  --theme-surface: #ffb6c1;
-  --theme-primary: #ff1493;
-  --theme-secondary: #00bfff;
-  --theme-accent: #ffff00;
-  --theme-border: #ffffff;
-  --theme-text: #c71585;
-  --theme-muted: #db7093;
-  
-  --theme-radius-base: 9999px;
-  --theme-radius-container: 48px;
-  --theme-radius-sm: 99px;
-  --theme-border-width: 4px;
-  --theme-shadow: 0 8px 16px rgba(255, 20, 147, 0.2);
-  --theme-backdrop-blur: 0px;
-  
-  --theme-font-heading: "Quicksand", var(--font-geist-sans);
-  --theme-font-body: "Quicksand", var(--font-geist-sans);
-}
-
-/* 25. Material Design 3 */
-[data-theme="material"] {
-  --theme-base: #fffbfe;
-  --theme-surface: #f4eff4;
-  --theme-primary: #6750a4;
-  --theme-secondary: #e8def8;
-  --theme-accent: #7d5260;
-  --theme-border: #cac4d0;
-  --theme-text: #1c1b1f;
-  --theme-muted: #49454f;
-  
-  --theme-radius-base: 24px;
-  --theme-radius-sm: 12px;
-  --theme-border-width: 0px;
-  --theme-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  --theme-backdrop-blur: 0px;
-  
-  --theme-font-heading: var(--font-geist-sans);
-  --theme-font-body: var(--font-geist-sans);
-}
-
-/* 26. Voice-First Multimodal */
-[data-theme="voice"] {
-  --theme-base: #0a0a0a;
-  --theme-surface: rgba(255, 255, 255, 0.02);
-  --theme-primary: #ffffff;
-  --theme-secondary: rgba(255, 255, 255, 0.05);
-  --theme-accent: #007aff;
-  --theme-border: rgba(255, 255, 255, 0.05);
-  --theme-text: #ffffff;
-  --theme-muted: rgba(255, 255, 255, 0.4);
-  
-  --theme-radius-base: 40px;
-  --theme-radius-sm: 20px;
-  --theme-border-width: 1px;
-  --theme-shadow: 0 0 60px rgba(255, 255, 255, 0.1); /* Pulsing effect requires keyframes */
-  --theme-backdrop-blur: 24px;
-  
-  --theme-font-heading: var(--font-geist-sans);
-  --theme-font-body: var(--font-geist-sans);
-}
-
-/* 27. Interactive Cursor-Focused */
-[data-theme="cursor"] {
-  --theme-base: #ffffff;
-  --theme-surface: #ffffff;
-  --theme-primary: #000000;
-  --theme-secondary: #f0f0f0;
-  --theme-accent: #ff0000;
-  --theme-border: #e5e5e5;
-  --theme-text: #000000;
-  --theme-muted: #999999;
-  
-  --theme-radius-base: 0px;
-  --theme-radius-sm: 0px;
-  --theme-border-width: 1px;
-  --theme-shadow: none;
-  --theme-backdrop-blur: 0px;
-  
-  --theme-font-heading: var(--font-geist-sans);
-  --theme-font-body: var(--font-geist-sans);
-}
-
-/* 28. macOS Aqua */
-[data-theme="aqua"] {
-  --theme-base: #e8e8e8; /* Classic grey pin-stripe base */
-  --theme-surface: linear-gradient(180deg, #ffffff 0%, #e6e6e6 50%, #d4d4d4 51%, #e0e0e0 100%);
-  --theme-primary: #0b5cff;
-  --theme-secondary: #cccccc;
-  --theme-accent: #ff2d55;
-  --theme-border: #a0a0a0;
-  --theme-text: #000000;
-  --theme-muted: #555555;
-  
-  --theme-radius-base: 999px;
-  --theme-radius-container: 32px;
-  --theme-radius-sm: 16px;
-  --theme-border-width: 1px;
-  --theme-shadow: 0 1px 3px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.8);
-  --theme-backdrop-blur: 0px;
-  
-  --theme-font-heading: "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --theme-font-body: "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-/* 29. Fluent Design */
-[data-theme="fluent"] {
-  --theme-base: #f3f3f3;
-  --theme-surface: rgba(255, 255, 255, 0.7); /* Mica effect */
-  --theme-primary: #0078d4;
-  --theme-secondary: rgba(0, 0, 0, 0.05);
-  --theme-accent: #005a9e;
-  --theme-border: rgba(0, 0, 0, 0.1);
-  --theme-text: #202020;
-  --theme-muted: #605e5c;
-  
-  --theme-radius-base: 4px;
-  --theme-radius-sm: 2px;
-  --theme-border-width: 1px;
-  --theme-shadow: 0 8px 16px rgba(0, 0, 0, 0.14);
-  --theme-backdrop-blur: 30px;
-  
-  --theme-font-heading: "Segoe UI Variable", "Segoe UI", sans-serif;
-  --theme-font-body: "Segoe UI Variable", "Segoe UI", sans-serif;
-}
-
-/* 30. Cyber-Noir */
-[data-theme="cyber-noir"] {
-  --theme-base: #050505;
-  --theme-surface: #0a0a0a;
-  --theme-primary: #ff8c00;
-  --theme-secondary: #1a1a1a;
-  --theme-accent: #ff4500;
-  --theme-border: #ff8c00;
-  --theme-text: #dcdcdc;
-  --theme-muted: #696969;
-  
-  --theme-radius-base: 0px;
-  --theme-radius-sm: 0px;
-  --theme-border-width: 1px;
-  --theme-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
-  --theme-backdrop-blur: 0px;
-  
-  --theme-font-heading: var(--font-geist-mono);
-  --theme-font-body: var(--font-geist-mono);
-}
-
-/* 31. Monochrome Brutalism */
-[data-theme="monochrome-brutalism"] {
-  --theme-base: #ffffff;
-  --theme-surface: #ffffff;
-  --theme-primary: #000000;
-  --theme-secondary: #e5e5e5;
-  --theme-accent: #000000;
-  --theme-border: #000000;
-  --theme-text: #000000;
-  --theme-muted: #737373;
-  
-  --theme-radius-base: 0px;
-  --theme-radius-sm: 0px;
-  --theme-border-width: 4px;
-  --theme-shadow: 8px 8px 0px 0px #000000;
-  --theme-backdrop-blur: 0px;
-  
-  --theme-font-heading: var(--font-geist-sans);
-  --theme-font-body: var(--font-geist-sans);
-}
 
 /* 32. Flat Design */
 [data-theme="flat-design"][data-mode="light"], [data-theme="flat-design"]:not([data-mode]) {
@@ -758,8 +190,578 @@
   --theme-backdrop-blur: 0px;
 }
 
+/* 5. Cyberpunk UI */
+:root[data-theme="cyberpunk"] {
+  --theme-base: #020b14;
+  --theme-surface: #0a192f;
+  --theme-primary: #fcee0a;
+  --theme-secondary: #00ff00;
+  --theme-accent: #ff003c;
+  --theme-border: #fcee0a;
+  --theme-text: #e0e6ed;
+  --theme-muted: #8892b0;
+  
+  --theme-radius-base: 0px;
+  --theme-radius-sm: 0px;
+  --theme-border-width: 1px;
+  --theme-shadow: 0 0 12px 2px rgba(252, 238, 10, 0.4);
+  --theme-backdrop-blur: 0px;
+  
+  --theme-font-heading: "Courier New", monospace;
+  --theme-font-body: "Courier New", monospace;
+}
+
+/* 6. Neumorphism */
+:root[data-theme="neumorphism"] {
+  --theme-base: #e0e5ec;
+  --theme-surface: #e0e5ec;
+  --theme-primary: #4a90e2;
+  --theme-secondary: #a3b1c6;
+  --theme-accent: #ff4757;
+  --theme-border: transparent;
+  --theme-text: #4a4a4a;
+  --theme-muted: #888888;
+  
+  --theme-radius-base: 20px;
+  --theme-radius-sm: 10px;
+  --theme-border-width: 0px;
+  --theme-shadow: 9px 9px 16px rgba(163,177,198,0.6), -9px -9px 16px rgba(255,255,255, 0.5);
+  --theme-backdrop-blur: 0px;
+  
+  --theme-font-heading: var(--font-geist-sans);
+  --theme-font-body: var(--font-geist-sans);
+}
+
+/* 7. Claymorphism */
+:root[data-theme="claymorphism"] {
+  --theme-base: #f1f5f9;
+  --theme-surface: #ffffff;
+  --theme-primary: #ff6b6b;
+  --theme-secondary: #4ecdc4;
+  --theme-accent: #ffe66d;
+  --theme-border: transparent;
+  --theme-text: #2d3436;
+  --theme-muted: #636e72;
+  
+  --theme-radius-base: 32px;
+  --theme-radius-sm: 16px;
+  --theme-border-width: 0px;
+  --theme-shadow: inset 4px 4px 8px rgba(255,255,255,0.7), inset -4px -4px 8px rgba(0,0,0,0.05), 8px 8px 16px rgba(0,0,0,0.08);
+  --theme-backdrop-blur: 0px;
+  
+  --theme-font-heading: var(--font-geist-sans);
+  --theme-font-body: var(--font-geist-sans);
+}
+
+/* 8. Aurora UI */
+:root[data-theme="aurora"] {
+  --theme-base: #0f172a;
+  --theme-surface: rgba(255, 255, 255, 0.05);
+  --theme-primary: #a855f7;
+  --theme-secondary: rgba(168, 85, 247, 0.1);
+  --theme-accent: #ec4899;
+  --theme-border: rgba(255, 255, 255, 0.1);
+  --theme-text: #ffffff;
+  --theme-muted: #94a3b8;
+  
+  --theme-radius-base: 24px;
+  --theme-radius-sm: 12px;
+  --theme-border-width: 1px;
+  --theme-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  --theme-backdrop-blur: 16px;
+  
+  --theme-font-heading: var(--font-geist-sans);
+  --theme-font-body: var(--font-geist-sans);
+}
+
+/* 9. Retro-Futurism */
+:root[data-theme="retrofuturism"] {
+  --theme-base: #2a2426;
+  --theme-surface: #3a3235;
+  --theme-primary: #ff8c42;
+  --theme-secondary: #42b883;
+  --theme-accent: #ff3c38;
+  --theme-border: #ff8c42;
+  --theme-text: #f0f0f0;
+  --theme-muted: #a0a0a0;
+  
+  --theme-radius-base: 8px;
+  --theme-radius-sm: 4px;
+  --theme-border-width: 2px;
+  --theme-shadow: 4px 4px 0px 0px #ff8c42;
+  --theme-backdrop-blur: 0px;
+  
+  --theme-font-heading: "Courier New", monospace;
+  --theme-font-body: "Courier New", monospace;
+}
+
+/* 10. Bento Box Grid */
+:root[data-theme="bento"] {
+  --theme-base: #f4f4f5;
+  --theme-surface: #ffffff;
+  --theme-primary: #18181b;
+  --theme-secondary: #e4e4e7;
+  --theme-accent: #3b82f6;
+  --theme-border: #d4d4d8;
+  --theme-text: #18181b;
+  --theme-muted: #71717a;
+  
+  --theme-radius-base: 24px;
+  --theme-radius-sm: 12px;
+  --theme-border-width: 1px;
+  --theme-shadow: none;
+  --theme-backdrop-blur: 0px;
+  
+  --theme-font-heading: var(--font-geist-sans);
+  --theme-font-body: var(--font-geist-sans);
+}
+
+/* 11. Spatial UI (VisionOS) */
+:root[data-theme="spatial"] {
+  --theme-base: #000000;
+  --theme-surface: rgba(255, 255, 255, 0.15);
+  --theme-primary: #ffffff;
+  --theme-secondary: rgba(255, 255, 255, 0.1);
+  --theme-accent: #007aff;
+  --theme-border: rgba(255, 255, 255, 0.4);
+  --theme-text: #ffffff;
+  --theme-muted: rgba(255, 255, 255, 0.6);
+  
+  --theme-radius-base: 9999px; /* Pill shapes */
+  --theme-radius-container: 32px;
+  --theme-radius-sm: 32px;
+  --theme-border-width: 1px;
+  --theme-shadow: 0 16px 40px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  --theme-backdrop-blur: 40px;
+  
+  --theme-font-heading: var(--font-geist-sans);
+  --theme-font-body: var(--font-geist-sans);
+}
+
+/* 12. Terminal / CLI */
+:root[data-theme="terminal"] {
+  --theme-base: #000000;
+  --theme-surface: #000000;
+  --theme-primary: #00ff00;
+  --theme-secondary: #003300;
+  --theme-accent: #00ff00;
+  --theme-border: #00ff00;
+  --theme-text: #00ff00;
+  --theme-muted: #008800;
+  
+  --theme-radius-base: 0px;
+  --theme-radius-sm: 0px;
+  --theme-border-width: 1px;
+  --theme-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+  --theme-backdrop-blur: 0px;
+  
+  --theme-font-heading: "Courier New", monospace;
+  --theme-font-body: "Courier New", monospace;
+}
+
+/* 13. Wireframe */
+:root[data-theme="wireframe"] {
+  --theme-base: #ffffff;
+  --theme-surface: #ffffff;
+  --theme-primary: #0000ff;
+  --theme-secondary: #e6e6ff;
+  --theme-accent: #00ffff;
+  --theme-border: #0000ff;
+  --theme-text: #0000ff;
+  --theme-muted: #6666ff;
+  
+  --theme-radius-base: 0px;
+  --theme-radius-sm: 0px;
+  --theme-border-width: 1px;
+  --theme-shadow: none;
+  --theme-backdrop-blur: 0px;
+  
+  --theme-font-heading: "Courier New", monospace;
+  --theme-font-body: "Courier New", monospace;
+}
+
+/* 14. AMOLED Pitch Black */
+:root[data-theme="amoled"] {
+  --theme-base: #000000;
+  --theme-surface: #000000;
+  --theme-primary: #ffffff;
+  --theme-secondary: #111111;
+  --theme-accent: #3b82f6;
+  --theme-border: #222222;
+  --theme-text: #ffffff;
+  --theme-muted: #888888;
+  
+  --theme-radius-base: 12px;
+  --theme-radius-sm: 8px;
+  --theme-border-width: 1px;
+  --theme-shadow: none;
+  --theme-backdrop-blur: 0px;
+  
+  --theme-font-heading: var(--font-geist-sans);
+  --theme-font-body: var(--font-geist-sans);
+}
+
+/* 15. Holographic */
+:root[data-theme="holographic"] {
+  --theme-base: #0f0c29;
+  --theme-surface: rgba(255, 255, 255, 0.05);
+  --theme-primary: #00ffff;
+  --theme-secondary: rgba(0, 255, 255, 0.1);
+  --theme-accent: #ff00ff;
+  --theme-border: rgba(0, 255, 255, 0.3);
+  --theme-text: #ffffff;
+  --theme-muted: #a0a0a0;
+  
+  --theme-radius-base: 24px;
+  --theme-radius-sm: 12px;
+  --theme-border-width: 1px;
+  --theme-shadow: 0 0 20px rgba(0, 255, 255, 0.3), inset 0 0 20px rgba(255, 0, 255, 0.2);
+  --theme-backdrop-blur: 16px;
+  
+  --theme-font-heading: var(--font-geist-sans);
+  --theme-font-body: var(--font-geist-sans);
+}
+
+/* 16. Dracula */
+:root[data-theme="dracula"] {
+  --theme-base: #282a36;
+  --theme-surface: #44475a;
+  --theme-primary: #ff79c6;
+  --theme-secondary: #6272a4;
+  --theme-accent: #8be9fd;
+  --theme-border: #6272a4;
+  --theme-text: #f8f8f2;
+  --theme-muted: #6272a4;
+  
+  --theme-radius-base: 6px;
+  --theme-radius-sm: 4px;
+  --theme-border-width: 1px;
+  --theme-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --theme-backdrop-blur: 0px;
+  
+  --theme-font-heading: var(--font-geist-sans);
+  --theme-font-body: var(--font-geist-sans);
+}
+
+/* 17. Nord */
+:root[data-theme="nord"] {
+  --theme-base: #2e3440;
+  --theme-surface: #3b4252;
+  --theme-primary: #88c0d0;
+  --theme-secondary: #434c5e;
+  --theme-accent: #81a1c1;
+  --theme-border: #4c566a;
+  --theme-text: #eceff4;
+  --theme-muted: #d8dee9;
+  
+  --theme-radius-base: 4px;
+  --theme-radius-sm: 2px;
+  --theme-border-width: 1px;
+  --theme-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  --theme-backdrop-blur: 0px;
+  
+  --theme-font-heading: var(--font-geist-sans);
+  --theme-font-body: var(--font-geist-sans);
+}
+
+/* 18. Solarized Light */
+:root[data-theme="solarized-light"] {
+  --theme-base: #fdf6e3;
+  --theme-surface: #eee8d5;
+  --theme-primary: #268bd2;
+  --theme-secondary: #93a1a1;
+  --theme-accent: #d33682;
+  --theme-border: #93a1a1;
+  --theme-text: #073642;
+  --theme-muted: #586e75;
+  
+  --theme-radius-base: 2px;
+  --theme-radius-sm: 2px;
+  --theme-border-width: 1px;
+  --theme-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --theme-backdrop-blur: 0px;
+  
+  --theme-font-heading: var(--font-geist-sans);
+  --theme-font-body: var(--font-geist-sans);
+}
+
+/* 19. Solarized Dark */
+:root[data-theme="solarized-dark"] {
+  --theme-base: #002b36;
+  --theme-surface: #073642;
+  --theme-primary: #2aa198;
+  --theme-secondary: #586e75;
+  --theme-accent: #cb4b16;
+  --theme-border: #586e75;
+  --theme-text: #93a1a1;
+  --theme-muted: #839496;
+  
+  --theme-radius-base: 2px;
+  --theme-radius-sm: 2px;
+  --theme-border-width: 1px;
+  --theme-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  --theme-backdrop-blur: 0px;
+  
+  --theme-font-heading: var(--font-geist-sans);
+  --theme-font-body: var(--font-geist-sans);
+}
+
+/* 20. Bauhaus */
+:root[data-theme="bauhaus"] {
+  --theme-base: #f5f5f5;
+  --theme-surface: #ffffff;
+  --theme-primary: #da291c;
+  --theme-secondary: #ffcd00;
+  --theme-accent: #0033a0;
+  --theme-border: #000000;
+  --theme-text: #000000;
+  --theme-muted: #666666;
+  
+  --theme-radius-base: 0px;
+  --theme-radius-sm: 0px;
+  --theme-border-width: 4px;
+  --theme-shadow: none;
+  --theme-backdrop-blur: 0px;
+  
+  --theme-font-heading: var(--font-geist-sans);
+  --theme-font-body: var(--font-geist-sans);
+}
+
+/* 21. Hand-drawn / Sketch */
+:root[data-theme="hand-drawn"] {
+  --theme-base: #ffffff;
+  --theme-surface: #f9f9f9;
+  --theme-primary: #000000;
+  --theme-secondary: #eeeeee;
+  --theme-accent: #ff0000;
+  --theme-border: #000000;
+  --theme-text: #000000;
+  --theme-muted: #666666;
+  
+  --theme-radius-base: 4px;
+  --theme-radius-sm: 2px;
+  --theme-border-width: 2px;
+  --theme-shadow: 2px 2px 0px 0px rgba(0,0,0,0.1);
+  --theme-backdrop-blur: 0px;
+  
+  --theme-font-heading: "Comic Sans MS", "Chalkboard SE", cursive;
+  --theme-font-body: "Comic Sans MS", "Chalkboard SE", cursive;
+}
+
+/* 22. Comic Book / Pop Art */
+:root[data-theme="comic"] {
+  --theme-base: #ffffff;
+  --theme-surface: #ffde00; /* Simulated flat pop color */
+  --theme-primary: #ff0000;
+  --theme-secondary: #00a2ff;
+  --theme-accent: #ff00ff;
+  --theme-border: #000000;
+  --theme-text: #000000;
+  --theme-muted: #333333;
+  
+  --theme-radius-base: 0px;
+  --theme-radius-sm: 0px;
+  --theme-border-width: 3px;
+  --theme-shadow: 6px 6px 0px 0px #000000;
+  --theme-backdrop-blur: 0px;
+  
+  --theme-font-heading: "Impact", "Arial Black", sans-serif;
+  --theme-font-body: var(--font-geist-sans);
+}
+
+/* 23. Watercolor */
+:root[data-theme="watercolor"] {
+  --theme-base: #faf8f5;
+  --theme-surface: rgba(240, 248, 255, 0.4);
+  --theme-primary: #6da2db;
+  --theme-secondary: rgba(255, 182, 193, 0.3);
+  --theme-accent: #ffb6c1;
+  --theme-border: transparent;
+  --theme-text: #2c3e50;
+  --theme-muted: #7f8c8d;
+  
+  --theme-radius-base: 32px;
+  --theme-radius-sm: 16px;
+  --theme-border-width: 0px;
+  --theme-shadow: 0 10px 40px -10px rgba(109, 162, 219, 0.3);
+  --theme-backdrop-blur: 8px;
+  
+  --theme-font-heading: "Georgia", serif;
+  --theme-font-body: var(--font-geist-sans);
+}
+
+/* 24. Candy / Bubblegum */
+:root[data-theme="candy"] {
+  --theme-base: #ffe4e1;
+  --theme-surface: #ffb6c1;
+  --theme-primary: #ff1493;
+  --theme-secondary: #00bfff;
+  --theme-accent: #ffff00;
+  --theme-border: #ffffff;
+  --theme-text: #c71585;
+  --theme-muted: #db7093;
+  
+  --theme-radius-base: 9999px;
+  --theme-radius-container: 48px;
+  --theme-radius-sm: 99px;
+  --theme-border-width: 4px;
+  --theme-shadow: 0 8px 16px rgba(255, 20, 147, 0.2);
+  --theme-backdrop-blur: 0px;
+  
+  --theme-font-heading: "Quicksand", var(--font-geist-sans);
+  --theme-font-body: "Quicksand", var(--font-geist-sans);
+}
+
+/* 25. Material Design 3 */
+:root[data-theme="material"] {
+  --theme-base: #fffbfe;
+  --theme-surface: #f4eff4;
+  --theme-primary: #6750a4;
+  --theme-secondary: #e8def8;
+  --theme-accent: #7d5260;
+  --theme-border: #cac4d0;
+  --theme-text: #1c1b1f;
+  --theme-muted: #49454f;
+  
+  --theme-radius-base: 24px;
+  --theme-radius-sm: 12px;
+  --theme-border-width: 0px;
+  --theme-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --theme-backdrop-blur: 0px;
+  
+  --theme-font-heading: var(--font-geist-sans);
+  --theme-font-body: var(--font-geist-sans);
+}
+
+/* 26. Voice-First Multimodal */
+:root[data-theme="voice"] {
+  --theme-base: #0a0a0a;
+  --theme-surface: rgba(255, 255, 255, 0.02);
+  --theme-primary: #ffffff;
+  --theme-secondary: rgba(255, 255, 255, 0.05);
+  --theme-accent: #007aff;
+  --theme-border: rgba(255, 255, 255, 0.05);
+  --theme-text: #ffffff;
+  --theme-muted: rgba(255, 255, 255, 0.4);
+  
+  --theme-radius-base: 40px;
+  --theme-radius-sm: 20px;
+  --theme-border-width: 1px;
+  --theme-shadow: 0 0 60px rgba(255, 255, 255, 0.1); /* Pulsing effect requires keyframes */
+  --theme-backdrop-blur: 24px;
+  
+  --theme-font-heading: var(--font-geist-sans);
+  --theme-font-body: var(--font-geist-sans);
+}
+
+/* 27. Interactive Cursor-Focused */
+:root[data-theme="cursor"] {
+  --theme-base: #ffffff;
+  --theme-surface: #ffffff;
+  --theme-primary: #000000;
+  --theme-secondary: #f0f0f0;
+  --theme-accent: #ff0000;
+  --theme-border: #e5e5e5;
+  --theme-text: #000000;
+  --theme-muted: #999999;
+  
+  --theme-radius-base: 0px;
+  --theme-radius-sm: 0px;
+  --theme-border-width: 1px;
+  --theme-shadow: none;
+  --theme-backdrop-blur: 0px;
+  
+  --theme-font-heading: var(--font-geist-sans);
+  --theme-font-body: var(--font-geist-sans);
+}
+
+/* 28. macOS Aqua */
+:root[data-theme="aqua"] {
+  --theme-base: #e8e8e8; /* Classic grey pin-stripe base */
+  --theme-surface: linear-gradient(180deg, #ffffff 0%, #e6e6e6 50%, #d4d4d4 51%, #e0e0e0 100%);
+  --theme-primary: #0b5cff;
+  --theme-secondary: #cccccc;
+  --theme-accent: #ff2d55;
+  --theme-border: #a0a0a0;
+  --theme-text: #000000;
+  --theme-muted: #555555;
+  
+  --theme-radius-base: 999px;
+  --theme-radius-container: 32px;
+  --theme-radius-sm: 16px;
+  --theme-border-width: 1px;
+  --theme-shadow: 0 1px 3px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.8);
+  --theme-backdrop-blur: 0px;
+  
+  --theme-font-heading: "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --theme-font-body: "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* 29. Fluent Design */
+:root[data-theme="fluent"] {
+  --theme-base: #f3f3f3;
+  --theme-surface: rgba(255, 255, 255, 0.7); /* Mica effect */
+  --theme-primary: #0078d4;
+  --theme-secondary: rgba(0, 0, 0, 0.05);
+  --theme-accent: #005a9e;
+  --theme-border: rgba(0, 0, 0, 0.1);
+  --theme-text: #202020;
+  --theme-muted: #605e5c;
+  
+  --theme-radius-base: 4px;
+  --theme-radius-sm: 2px;
+  --theme-border-width: 1px;
+  --theme-shadow: 0 8px 16px rgba(0, 0, 0, 0.14);
+  --theme-backdrop-blur: 30px;
+  
+  --theme-font-heading: "Segoe UI Variable", "Segoe UI", sans-serif;
+  --theme-font-body: "Segoe UI Variable", "Segoe UI", sans-serif;
+}
+
+/* 30. Cyber-Noir */
+:root[data-theme="cyber-noir"] {
+  --theme-base: #050505;
+  --theme-surface: #0a0a0a;
+  --theme-primary: #ff8c00;
+  --theme-secondary: #1a1a1a;
+  --theme-accent: #ff4500;
+  --theme-border: #ff8c00;
+  --theme-text: #dcdcdc;
+  --theme-muted: #696969;
+  
+  --theme-radius-base: 0px;
+  --theme-radius-sm: 0px;
+  --theme-border-width: 1px;
+  --theme-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
+  --theme-backdrop-blur: 0px;
+  
+  --theme-font-heading: var(--font-geist-mono);
+  --theme-font-body: var(--font-geist-mono);
+}
+
+/* 31. Monochrome Brutalism */
+:root[data-theme="monochrome-brutalism"] {
+  --theme-base: #ffffff;
+  --theme-surface: #ffffff;
+  --theme-primary: #000000;
+  --theme-secondary: #e5e5e5;
+  --theme-accent: #000000;
+  --theme-border: #000000;
+  --theme-text: #000000;
+  --theme-muted: #737373;
+  
+  --theme-radius-base: 0px;
+  --theme-radius-sm: 0px;
+  --theme-border-width: 4px;
+  --theme-shadow: 8px 8px 0px 0px #000000;
+  --theme-backdrop-blur: 0px;
+  
+  --theme-font-heading: var(--font-geist-sans);
+  --theme-font-body: var(--font-geist-sans);
+}
+
 /* 33. Skeuomorphism */
-[data-theme="skeuomorphism"] {
+:root[data-theme="skeuomorphism"] {
   --theme-base: #d1d5db;
   --theme-surface: linear-gradient(180deg, #f3f4f6 0%, #e5e7eb 100%);
   --theme-primary: linear-gradient(180deg, #3b82f6 0%, #2563eb 100%);
@@ -776,7 +778,7 @@
 }
 
 /* 34. Liquid Glass */
-[data-theme="liquid-glass"] {
+:root[data-theme="liquid-glass"] {
   --theme-base: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
   --theme-surface: rgba(255, 255, 255, 0.2);
   --theme-primary: rgba(255, 255, 255, 0.4);
@@ -793,7 +795,7 @@
 }
 
 /* 35. Hero-Centric */
-[data-theme="hero-centric"] {
+:root[data-theme="hero-centric"] {
   --theme-base: #0f172a;
   --theme-surface: #1e293b;
   --theme-primary: #38bdf8;
@@ -810,7 +812,7 @@
 }
 
 /* 36. Conversion-Optimized */
-[data-theme="conversion"] {
+:root[data-theme="conversion"] {
   --theme-base: #ffffff;
   --theme-surface: #f8fafc;
   --theme-primary: #ef4444;
@@ -827,7 +829,7 @@
 }
 
 /* 37. Feature-Rich Showcase */
-[data-theme="feature-rich"] {
+:root[data-theme="feature-rich"] {
   --theme-base: #fafafa;
   --theme-surface: #ffffff;
   --theme-primary: #6366f1;
@@ -844,7 +846,7 @@
 }
 
 /* 38. Minimal & Direct */
-[data-theme="minimal-direct"] {
+:root[data-theme="minimal-direct"] {
   --theme-base: #ffffff;
   --theme-surface: #ffffff;
   --theme-primary: #171717;
@@ -861,7 +863,7 @@
 }
 
 /* 39. Social Proof */
-[data-theme="social-proof"] {
+:root[data-theme="social-proof"] {
   --theme-base: #f4f4f5;
   --theme-surface: #ffffff;
   --theme-primary: #10b981;
@@ -878,7 +880,7 @@
 }
 
 /* 40. Interactive Demo */
-[data-theme="interactive-demo"] {
+:root[data-theme="interactive-demo"] {
   --theme-base: #18181b;
   --theme-surface: #27272a;
   --theme-primary: #8b5cf6;
@@ -895,7 +897,7 @@
 }
 
 /* 41. Trust & Authority */
-[data-theme="trust-authority"] {
+:root[data-theme="trust-authority"] {
   --theme-base: #f0fdf4;
   --theme-surface: #ffffff;
   --theme-primary: #15803d;
@@ -912,7 +914,7 @@
 }
 
 /* 42. Storytelling */
-[data-theme="storytelling"] {
+:root[data-theme="storytelling"] {
   --theme-base: #fdf4ff;
   --theme-surface: #ffffff;
   --theme-primary: #c026d3;
@@ -929,7 +931,7 @@
 }
 
 /* 43. Data-Dense Dashboard */
-[data-theme="data-dense"] {
+:root[data-theme="data-dense"] {
   --theme-base: #ffffff;
   --theme-surface: #ffffff;
   --theme-primary: #2563eb;
@@ -946,7 +948,7 @@
 }
 
 /* 44. Heat Map Style */
-[data-theme="heatmap"] {
+:root[data-theme="heatmap"] {
   --theme-base: #111827;
   --theme-surface: #1f2937;
   --theme-primary: #ef4444;
@@ -963,7 +965,7 @@
 }
 
 /* 45. 3D Hyperrealism */
-[data-theme="hyperrealism-3d"] {
+:root[data-theme="hyperrealism-3d"] {
   --theme-base: #262626;
   --theme-surface: #404040;
   --theme-primary: #3b82f6;
@@ -980,7 +982,7 @@
 }
 
 /* 46. Vibrant Block */
-[data-theme="vibrant-block"] {
+:root[data-theme="vibrant-block"] {
   --theme-base: #39FF14;
   --theme-surface: #BF00FF;
   --theme-primary: #000000;
@@ -997,7 +999,7 @@
 }
 
 /* 47. Accessible & Ethical */
-[data-theme="accessible"] {
+:root[data-theme="accessible"] {
   --theme-base: #ffffff;
   --theme-surface: #ffffff;
   --theme-primary: #0000ee;
@@ -1014,7 +1016,7 @@
 }
 
 /* 48. Motion-Driven */
-[data-theme="motion-driven"] {
+:root[data-theme="motion-driven"] {
   --theme-base: #020617;
   --theme-surface: #0f172a;
   --theme-primary: #10b981;
@@ -1031,7 +1033,7 @@
 }
 
 /* 49. Zero Interface */
-[data-theme="zero-ui"] {
+:root[data-theme="zero-ui"] {
   --theme-base: #fcfcfc;
   --theme-surface: transparent;
   --theme-primary: #111111;
